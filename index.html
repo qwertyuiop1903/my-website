@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1e1e2f, #232344);
+            color: #eaeaea;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #14141f;
+            color: #eaeaea;
+            padding: 2rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #eaeaea;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 1.5rem;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .projects, .skills, .contact {
+            margin-top: 4rem;
+        }
+
+        .projects .project {
+            background: #1e1e2f;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s;
+        }
+
+        .projects .project:hover {
+            transform: scale(1.05);
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills li {
+            background: #00bcd4;
+            color: #14141f;
+            margin: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .skills li:hover {
+            background: #0288d1;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1e1e2f;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .contact label {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact input, .contact textarea, .contact button {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact input, .contact textarea {
+            background: #333;
+            color: #eaeaea;
+        }
+
+        .contact button {
+            background: #00bcd4;
+            color: #14141f;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #0288d1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #14141f;
+            color: #eaeaea;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #0288d1;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .skills ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate developer with expertise in AI, web development, and innovative solutions for real-world problems. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Educational Qualification</h2>
+        <ul>
+            <li><strong>Class 10:</strong> XYZ School, 95%</li>
+            <li><strong>Class 12:</strong> ABC School, 90%</li>
+            <li><strong>JEE:</strong> Qualified with Rank XYZ</li>
+            <li><strong>B.Tech:</strong> Computer Science, DEF University</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Instant Micro-Credit Scoring</h3>
+            <p>An AI-driven solution to help street vendors access loans by analyzing digital financial records and generating risk scores.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Context-Aware Skill Boosts</h3>
+            <p>A project that uses AI to curate personalized training modules for gig workers based on job history and user surveys.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>AI/ML</li>
+            <li>Data Analysis</li>
+            <li>Laboratory on Networking and Digital Electronics</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Connect with me: <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
